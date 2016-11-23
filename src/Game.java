@@ -31,4 +31,27 @@ public class Game {
 
     }
 
+    
+    
+      /**
+     * @return the progress of the word
+     * for first time it shoud be --------
+     */
+    public String getCurrentPorgress() {
+
+
+        String progress = "";
+
+        for (char letter : mAnswer.toCharArray()) {
+            char display = '-';
+            if (mHit.indexOf(letter) > 0) {
+                display = letter;
+            }
+            progress += display;
+        }
+
+        return progress;
+
+    }
+    
 }
