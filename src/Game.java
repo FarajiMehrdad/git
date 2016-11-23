@@ -54,4 +54,21 @@ public class Game {
 
     }
     
+    
+       /**
+     * @return number of try user has
+     */
+    public int getRemainTries() {
+        return mMaxMisses - mHit.length();
+    }
+
+
+    //TODO check game is solve?!
+    public boolean isSolved(){
+
+        return true;
+    }
+    
+    
+    
 }
